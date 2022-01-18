@@ -13,9 +13,12 @@
 		CEACB260278B76F1002446E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACB25E278B76F1002446E0 /* Main.storyboard */; };
 		CEACB262278B76F3002446E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEACB261278B76F3002446E0 /* Assets.xcassets */; };
 		CEACB265278B76F3002446E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACB263278B76F3002446E0 /* LaunchScreen.storyboard */; };
+		E37AB664CDB61C93B2B9A0ED /* Pods_Lesson5HomeThree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FAE719F6CE6FD604B48E9E /* Pods_Lesson5HomeThree.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39FAE719F6CE6FD604B48E9E /* Pods_Lesson5HomeThree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson5HomeThree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15430ED7BC2EAA449480E92 /* Pods-Lesson5HomeThree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson5HomeThree.debug.xcconfig"; path = "Target Support Files/Pods-Lesson5HomeThree/Pods-Lesson5HomeThree.debug.xcconfig"; sourceTree = "<group>"; };
 		CEACB255278B76F1002446E0 /* Lesson5HomeThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson5HomeThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEACB258278B76F1002446E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEACB25A278B76F1002446E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CEACB261278B76F3002446E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEACB264278B76F3002446E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEACB266278B76F3002446E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6E235377A20C9DD18D1749 /* Pods-Lesson5HomeThree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson5HomeThree.release.xcconfig"; path = "Target Support Files/Pods-Lesson5HomeThree/Pods-Lesson5HomeThree.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37AB664CDB61C93B2B9A0ED /* Pods_Lesson5HomeThree.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		850C3E5901E7C135FA205D06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A15430ED7BC2EAA449480E92 /* Pods-Lesson5HomeThree.debug.xcconfig */,
+				EF6E235377A20C9DD18D1749 /* Pods-Lesson5HomeThree.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CEACB24C278B76F0002446E0 = {
 			isa = PBXGroup;
 			children = (
 				CEACB257278B76F1002446E0 /* Lesson5HomeThree */,
 				CEACB256278B76F1002446E0 /* Products */,
+				850C3E5901E7C135FA205D06 /* Pods */,
+				D4E9E8EDD3B5427B1D03B6F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = Lesson5HomeThree;
 			sourceTree = "<group>";
 		};
+		D4E9E8EDD3B5427B1D03B6F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39FAE719F6CE6FD604B48E9E /* Pods_Lesson5HomeThree.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEACB269278B76F3002446E0 /* Build configuration list for PBXNativeTarget "Lesson5HomeThree" */;
 			buildPhases = (
+				850CA44D01D79A23645B56B2 /* [CP] Check Pods Manifest.lock */,
 				CEACB251278B76F1002446E0 /* Sources */,
 				CEACB252278B76F1002446E0 /* Frameworks */,
 				CEACB253278B76F1002446E0 /* Resources */,
+				ADD99E4B3B4933BEFB5CB00C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		850CA44D01D79A23645B56B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lesson5HomeThree-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADD99E4B3B4933BEFB5CB00C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lesson5HomeThree/Pods-Lesson5HomeThree-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lesson5HomeThree/Pods-Lesson5HomeThree-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lesson5HomeThree/Pods-Lesson5HomeThree-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEACB251278B76F1002446E0 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		CEACB26A278B76F3002446E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A15430ED7BC2EAA449480E92 /* Pods-Lesson5HomeThree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +381,7 @@
 		};
 		CEACB26B278B76F3002446E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF6E235377A20C9DD18D1749 /* Pods-Lesson5HomeThree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
